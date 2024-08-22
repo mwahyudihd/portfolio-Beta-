@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    body{
+        font-family: theme(fontFamily.poppins), 'sans-serif';
+    }
+}
+
+@layer utilities{
+    .hamburger-line{
+        @apply block w-[30px] h-[2px] my-2 bg-darkCoffee;
+    }
+
+    .hamburger-actived {
+        @apply [&>span:first-child]:rotate-45 [&>span:nth-child(2)]:scale-0 [&>span:last-child]:-rotate-45;
+    }
+}
