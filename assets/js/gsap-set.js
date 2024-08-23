@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
     gsap.registerPlugin(ScrollTrigger,TextPlugin);
     gsap.from('#title',{
-        x: -200, duration: 2,
+        x: -100, duration: 2,
         scrollTrigger: {
             trigger: '#title',
             start: "top 61%",
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     });
     gsap.from('#first', {
-        x: -200,
+        x: -100,
         opacity: 0,
         duration: 1,
         delay: 1,
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     })
     gsap.from('#last', {
-        x: 200,
+        x: 100,
         opacity: 0,
         duration: 1,
         delay: 1,
