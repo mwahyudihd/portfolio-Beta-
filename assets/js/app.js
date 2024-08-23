@@ -1,12 +1,12 @@
 const burgerBtn = document.querySelector('#hamburger');
 const navbar = document.querySelector('header');
 const navFix = document.querySelector('#nav-extra');
+let currentScroll;
+
 
 burgerBtn.addEventListener('click',() => {
     burgerBtn.classList.toggle("hamburger-actived");
 });
-
-let currentScroll;
 
 window.addEventListener('scroll', () => {
     const scroll = window.scrollY;

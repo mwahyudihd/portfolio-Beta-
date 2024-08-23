@@ -1,10 +1,9 @@
 document.addEventListener("DOMContentLoaded", (event) => {
-    gsap.registerPlugin(ScrollTrigger,TextPlugin)
-    // gsap code here!
+    gsap.registerPlugin(ScrollTrigger,TextPlugin);
     gsap.from('#title',{
         x: -100, duration: 3
     });
-    gsap.from('svg', {
+    gsap.from('#blob', {
         scale: -0,
         opacity: 0,
         duration: 2,
@@ -21,7 +20,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             // }
         }
     });
-    gsap.from('img', {
+    gsap.from('#profile', {
         y: 100,
         opacity: 0,
         duration: 1,
