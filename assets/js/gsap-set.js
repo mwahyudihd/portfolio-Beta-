@@ -10,7 +10,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     });
     gsap.to("#icon",{
-        text: 'Wahyudi',
+        text: 'Wellcome',
+        repeat: 1,
+        yoyo: true,
         duration: 2,
         delay: 1
     });
@@ -115,7 +117,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
             start: "top 85%",
             end: "top 10%",
             toggleActions: "restart reverse restart reverse",
-            
         }
     });
 });
