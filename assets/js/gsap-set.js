@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     gsap.from('img', {
         y: 100,
         opacity: 0,
-        duration: 3,
+        duration: 1,
         scrollTrigger: {
             trigger: 'img',
             start: "top 70%",
