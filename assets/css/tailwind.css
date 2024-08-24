@@ -9,11 +9,8 @@
 }
 
 @layer components{
-    .grid-card {
-        @apply dark:shadow-slate-50 dark:shadow-md hover:scale-90 transition-all duration-500 overflow-hidden bg-blue-500 aspect-[4/3] m-1 rounded-lg md:aspect-[3/4] xl:aspect-[4/3];
-    }
-    .grid-content {
-        @apply transition-all duration-700 hover:-rotate-12 cursor-pointer group-hover:scale-125  h-full bg-cover rounded-lg;
+    .bg-backdrop {
+        backdrop-filter: blur(15px);
     }
 }
 

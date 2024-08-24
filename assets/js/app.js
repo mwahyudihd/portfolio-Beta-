@@ -1,10 +1,12 @@
 const burgerBtn = document.querySelector('#hamburger');
 const navbar = document.querySelector('header');
+const navMenu = document.querySelector('#nav-menu');
 let currentScroll;
 
 
 burgerBtn.addEventListener('click',() => {
     burgerBtn.classList.toggle("hamburger-actived");
+    navMenu.classList.toggle("hidden");
 });
 
 window.addEventListener('scroll', () => {

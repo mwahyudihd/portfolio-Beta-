@@ -10,8 +10,8 @@
 </head>
 <body class="">
     <!-- header -->
-    <header class="overflow-hidden bg-coffee top-0 border left-0 w-full flex items-center z-10 absolute transition duration-1000 ease-in-out">
-        <div class="container mx-auto">
+    <header class="bg-coffee top-0 border left-0 w-full flex items-center z-30 absolute transition duration-1000 ease-in-out">
+        <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
                     <a href="#home" id="icon" class="font-extrabold text-xl text-darkCoffee block py-6">
@@ -25,6 +25,25 @@
                         <span class="hamburger-line ease-in-out transition duration-300 "></span>
                         <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
                     </button>
+                    <nav class="hidden bg-backdrop absolute bg-opacity-65 px-3 py-5 border border-cafe z-50 bg-coffeeLight shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full" id="nav-menu">
+                        <ul class="block my-2">
+                            <li class="px-3 rounded-lg group hover:bg-primary hover:opacity-40 hover:bg-backdrop my-2">
+                                <a class="group-hover:text-coffeeLight" href="#home">Home</a>
+                            </li>
+                            <li class="px-3 rounded-lg group hover:bg-primary hover:opacity-40 hover:bg-backdrop my-2">
+                                <a class="group-hover:text-coffeeLight" href="#about">About</a>
+                            </li>
+                            <li class="px-3 rounded-lg group hover:bg-primary hover:opacity-40 hover:bg-backdrop my-2">
+                                <a class="group-hover:text-coffeeLight" href="#project">Projects</a>
+                            </li>
+                            <li class="px-3 rounded-lg group hover:bg-primary hover:opacity-40 hover:bg-backdrop my-2">
+                                <a class="group-hover:text-coffeeLight" href="#service">Services</a>
+                            </li>
+                            <li class="px-3 rounded-lg group hover:bg-primary hover:opacity-40 hover:bg-backdrop my-2">
+                                <a class="group-hover:text-coffeeLight" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -34,23 +53,22 @@
     <!-- header -->
 
     <!-- start of about section -->
-    <section id="hero" class="pt-64 overflow-hidden">
+    <section id="hero" class="pt-64">
         <div class="container mx-auto">
             <div class="flex flex-wrap font-poppins">
                 <div class="w-full px-4 self-center lg:w-1/2">
                     <h1 id="title" class="text-base font-extrabold text-primary md:text-xl lg:text-2xl">Hi There!, <span id="child-title" class="m-1 block font-bold text-4xl lg:text-5xl text-darkCoffee "></span></h1>
                     <h2 id="subtitle" class="text-sm font-semibold mb-5 text-darkCoffee md:text-xl lg:text-2xl"><span id="first" class="inline-block">Informatic Student</span> <span id="middle" class="inline-block">|</span> <span class="text-second inline-block" id="last">Full Stack Developer</span></h2>
                     <p id="motto" class="font-medium text-semiDark text-justify my-11 leading-relaxed">
-                        
                     </p>
-                    <a href="#" id="btn-contact-me" class=" group border text-lg font-semibold border-semiDark rounded-xl p-3 bg-primary text-coffeeLight transition-all ease-in-out hover:bg-second hover:scale-90 float-end lg:float-none">Contact Me!</a>
+                    <a href="#" id="btn-contact-me" class=" group border text-lg z-[100] font-semibold border-semiDark rounded-xl p-3 bg-primary text-coffeeLight transition-all ease-in-out hover:bg-second hover:scale-90 float-end lg:float-none">Contact Me!</a>
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="mt-10 relative">
-                        <img src="assets/img/id-photo.png" id="profile" alt="MyPhoto" width="250" height="250" class="max-w-full mx-auto">
+                        <img src="assets/img/id-photo.png" id="profile" alt="MyPhoto" width="300" height="370" class="max-w-full mx-auto">
                         <span id="blob" class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2">
-                            <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#C8AE7D" d="M57.1,-55.7C72.5,-41.7,82.4,-20.8,83.5,1C84.5,22.9,76.6,45.8,61.2,62C45.8,78.3,22.9,87.9,0.4,87.5C-22,87.1,-44.1,76.6,-58.6,60.4C-73.2,44.1,-80.2,22,-79.1,1.2C-77.9,-19.7,-68.6,-39.5,-54,-53.5C-39.5,-67.6,-19.7,-75.9,0.5,-76.5C20.8,-77,41.7,-69.7,57.1,-55.7Z" transform="translate(100 100) scale(1.1)" />
+                            <svg width="300" height="300" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#C8AE7D" d="M57.1,-55.7C72.5,-41.7,82.4,-20.8,83.5,1C84.5,22.9,76.6,45.8,61.2,62C45.8,78.3,22.9,87.9,0.4,87.5C-22,87.1,-44.1,76.6,-58.6,60.4C-73.2,44.1,-80.2,22,-79.1,1.2C-77.9,-19.7,-68.6,-39.5,-54,-53.5C-39.5,-67.6,-19.7,-75.9,0.5,-76.5C20.8,-77,41.7,-69.7,57.1,-55.7Z" transform="translate(100 100) scale(1.2)" />
                             </svg>
                         </span>
                     </div>
