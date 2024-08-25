@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         x: -100, duration: 2,
         scrollTrigger: {
             trigger: '#title',
-            start: "top 61%",
+            start: "top 75%",
             end: "top 10%",
-            toggleActions: "restart reverse restart reverse",
+            toggleActions: "restart reverse restart reverse"
         }
     });
     gsap.to("#icon",{
@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         delay: 2,
         scrollTrigger: {
             trigger: '#child-title',
-            start: "top 70%",
+            start: "top 80%",
             end: "top 10%",
-            toggleActions: "restart reverse restart reverse",
+            toggleActions: "restart reverse restart reverse"
         }
     });
     gsap.from('#blob', {
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             trigger: '#blob',
             start: "top 70%",
             end: "top 15%",
-            toggleActions: "restart reverse restart reverse",
+            toggleActions: "restart reverse restart reverse"
             // markers: {
             //     startColor: '#252525',
             //     endColor: 'red',
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             trigger: 'img',
             start: "top 70%",
             end: "top 15%",
-            toggleActions: "restart reverse restart reverse",
+            toggleActions: "restart reverse restart reverse"
             // markers: {
             //     startColor: '#252525',
             //     endColor: 'red',
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             trigger: '#first',
             start: "top 70%",
             end: "top 10%",
-            toggleActions: "restart reverse restart reverse",
+            toggleActions: "restart reverse restart reverse"
         }
     });
     gsap.from('#middle', {
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             trigger: '#middle',
             start: "top 70%",
             end: "top 10%",
-            toggleActions: "restart reverse restart reverse",
+            toggleActions: "restart reverse restart reverse"
         }
     })
     gsap.from('#last', {
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             trigger: '#last',
             start: "top 70%",
             end: "top 10%",
-            toggleActions: "restart reverse restart reverse",
+            toggleActions: "restart reverse restart reverse"
             
         }
     });
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             trigger: '#motto',
             start: "top 81%",
             end: "top 10%",
-            toggleActions: "restart reverse restart reverse",
+            toggleActions: "restart reverse restart reverse"
             
         }
     });
@@ -116,7 +116,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
             trigger: '#btn-contact-me',
             start: "top 85%",
             end: "top 10%",
-            toggleActions: "restart reverse restart reverse",
+            toggleActions: "restart reverse restart reverse"
         }
     });
+    gsap.from('#about-description', {
+        y: -100,
+        opacity: 0,
+        duration: 0.5,
+        scrollTrigger: {
+            trigger: '#about',
+            start: "40% 70%",
+            end: "70% 40%",
+            toggleActions: "restart reverse restart reverse"
+        }
+    })
 });

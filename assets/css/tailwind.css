@@ -16,15 +16,10 @@
 
 @layer utilities{
     .hamburger-line{
-        @apply block w-[30px] h-[2px] my-2 bg-darkCoffee;
+        @apply block w-[30px] h-[2px] my-2 bg-coffeeLight;
     }
 
     .hamburger-actived {
         @apply [&>span:first-child]:rotate-45 [&>span:nth-child(2)]:scale-0 [&>span:last-child]:-rotate-45;
-    }
-
-    .backdrop-blur-nav{
-        @apply shadow-md shadow-darkCoffee/35 fixed z-[9999] bg-opacity-70;
-        backdrop-filter: blur(15px);
     }
 }

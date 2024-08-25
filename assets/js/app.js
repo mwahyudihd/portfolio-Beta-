@@ -13,12 +13,13 @@ window.addEventListener('scroll', () => {
     const scroll = window.scrollY;
     if( currentScroll < 100 ) {
         navbar.classList.add('absolute');
-        navbar.classList.remove('backdrop-blur-nav');
+        navbar.classList.remove('sticky');
     } else if ( currentScroll > scroll ){
-        navbar.classList.add('backdrop-blur-nav');
+        navbar.classList.add('sticky');
         navbar.classList.remove('absolute');
     } else {
-        navbar.classList.remove('backdrop-blur-nav');
+        navbar.classList.remove('sticky');
+        navbar.classList.add('absolute');
     }
     
     currentScroll = scroll;

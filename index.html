@@ -9,37 +9,38 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="">
+    <div class="hidden hamburger-actived sticky"></div>
     <!-- header -->
-    <header class="bg-coffee top-0 border left-0 w-full flex items-center z-30 absolute transition duration-1000 ease-in-out">
+    <header class="bg-primary bg-opacity-80 rounded-xl top-0 border left-0 w-full flex items-center z-30 absolute transition duration-1000 ease-in-out">
         <div class="container">
             <div class="flex items-center justify-between relative">
-                <div class="px-4">
-                    <a href="#home" id="icon" class="font-extrabold text-xl text-darkCoffee block py-6">
+                <div class="px-5">
+                    <a href="#home" id="icon" class="font-extrabold text-xl text-coffeeLight block py-6">
                         Wahyudi
                     </a>
                 </div>
-                <div class="flex items-center px-4">
+                <div class="items-center px-4">
                     <button id="hamburger" name="hamburger" type="button" 
-                    class="absolute right-4 z-[9999]">
+                    class="absolute right-4 z-[9999] -top-0 my-5 lg:hidden">
                         <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
                         <span class="hamburger-line ease-in-out transition duration-300 "></span>
                         <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
                     </button>
-                    <nav class="hidden bg-backdrop absolute bg-opacity-65 px-3 py-5 border border-cafe z-50 bg-coffeeLight shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full" id="nav-menu">
-                        <ul class="block my-2">
-                            <li class="px-3 rounded-lg group hover:bg-primary hover:opacity-40 hover:bg-backdrop my-2">
+                    <nav class="hidden lg:text-coffeeLight text-darkCoffee lg:mx-auto lg:flex bg-opacity-60 lg:max-w-full lg:rounded-none lg:bg-transparent lg:static lg:border-none bg lg:shadow-none bg-backdrop absolute px-3 py-5 border border-cafe z-50 bg-coffeeLight shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full" id="nav-menu">
+                        <ul class="block lg:flex">
+                            <li class="px-3 rounded-lg group hover:bg-primary my-2">
                                 <a class="group-hover:text-coffeeLight" href="#home">Home</a>
                             </li>
-                            <li class="px-3 rounded-lg group hover:bg-primary hover:opacity-40 hover:bg-backdrop my-2">
+                            <li class="px-3 rounded-lg group hover:bg-primary my-2">
                                 <a class="group-hover:text-coffeeLight" href="#about">About</a>
                             </li>
-                            <li class="px-3 rounded-lg group hover:bg-primary hover:opacity-40 hover:bg-backdrop my-2">
+                            <li class="px-3 rounded-lg group hover:bg-primary my-2">
                                 <a class="group-hover:text-coffeeLight" href="#project">Projects</a>
                             </li>
-                            <li class="px-3 rounded-lg group hover:bg-primary hover:opacity-40 hover:bg-backdrop my-2">
+                            <li class="px-3 rounded-lg group hover:bg-primary my-2">
                                 <a class="group-hover:text-coffeeLight" href="#service">Services</a>
                             </li>
-                            <li class="px-3 rounded-lg group hover:bg-primary hover:opacity-40 hover:bg-backdrop my-2">
+                            <li class="px-3 rounded-lg group hover:bg-primary my-2">
                                 <a class="group-hover:text-coffeeLight" href="#contact">Contact</a>
                             </li>
                         </ul>
@@ -53,7 +54,7 @@
     <!-- header -->
 
     <!-- start of about section -->
-    <section id="hero" class="pt-64">
+    <section id="home" class="pt-64">
         <div class="container mx-auto">
             <div class="flex flex-wrap font-poppins">
                 <div class="w-full px-4 self-center lg:w-1/2">
@@ -79,18 +80,27 @@
     <!-- end of hero section -->
 
     <!-- strat of about section -->
-    <section class="pb-32 pt-36 overflow-hidden" id="about">
-        <div class="container">
+    <section class="pb-32 pt-36 flex flex-wrap" id="about">
+        <div class="container mx-auto m-20">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-10">
-                    <h4 class="text-xl">
+                    <h4 class="text-2xl font-bold text-primary">
                         About Me?
                     </h4>
-                    <h2>Let code with me!</h2>
+                    <h2 class="text-lg font-semibold text-primary">Let code with me!</h2>
+                    <div id="about-description" class="container shadow-md rounded-lg shadow-primary p-10 text-justify bg-backdrop bg-primary bg-opacity-85 transition duration-700 ease-in-out hover:bg-primary hover:text-coffeeLight">
+                        <p class="mx-3 px-3 text-coffeeLight">Hello! I’m Wahyudi, a spirited second-year informatics student with a fervent passion for software development. As an avid explorer of the digital realm, I immerse myself in the latest technologies, particularly Full-stack web development and Flutter for mobile apps. With an insatiable curiosity and a drive for continuous growth, I’m always on the lookout for new challenges and opportunities to refine my skills in this dynamic tech landscape.</p>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="container mx-auto">
+            <div class="flex flex-row text-center border border-darkCoffee rounded-2xl">
+                <h1 class=" text-2xl font-bold text-primary p-3">Skill</h1>    
+            </div>
+        </div>
     </section>
+    <div id="start-box"></div>
     <section class="my-64 pt-64">
 
     </section>
